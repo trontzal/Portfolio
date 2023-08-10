@@ -1,14 +1,16 @@
 <template>
     <div id="PerfilConFoto">
         <img src="@/assets/inicio/marcoConFoto.png" alt="" id="fotoCara">
-        <p class="mediana">
-            Gonzalo <br/>
-            &nbsp;Lekunberri
-        </p>
-        <p class="mediana">
-            Full Stack <br/>
-            &nbsp;Developer
-        </p>
+        <div class="mediana">
+            <div>
+                <p>Gonzalo</p>
+                <p>&nbsp;Lekunberri</p>
+            </div>
+            <div>
+                <p class="efecto">Full Stack </p>
+                <p>&nbsp;Developer</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -23,7 +25,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        justify-content: center; /* Alinea horizontalmente el contenido */
+        justify-content: center;
     }
 
     #fotoCara{
@@ -31,7 +33,7 @@
         align-self: center;
     }
 
-    #PerfilConFoto > p{
+    #PerfilConFoto > div > div > p{
         color: white;
         margin-left: 20%;
     }
