@@ -1,30 +1,67 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+
+    <router-view/>
+    <div id="navBar">
+      <NavBarComp />
+    </div>
+
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+  import NavBarComp from './components/NavBarComp.vue';
+  export default {
+    components: {
+      NavBarComp,
     }
   }
-}
+</script>
+
+<style lang="scss">
+  @font-face {
+    font-family: 'Cyberpunk';
+    src: url('@/assets/fonts/Cyberpunk.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'DotGothic16';
+    src: url('@/assets/fonts/DotGothic16-Regular.ttf') format('truetype');
+  }
+
+  *{
+    margin: 0;
+  }
+  #app {
+    background: rgb(255,255,1);
+    background: linear-gradient(180deg, rgba(255,255,1,1) 0%, rgba(255,255,1,1) 40%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    display: flex;
+    font-family: DotGothic16;
+  }
+
+  // fuentes ***********************************************
+  .pequena{
+    font-size: 1.5rem;
+  }
+
+  .mediana{
+    font-size: 2rem;
+  }
+
+  .sombra {
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .cyberpunk{
+    font-family: Cyberpunk;
+  }
+  
+
+  #navBar {
+    display: flex;
+    align-items: center; /* Centramos verticalmente los elementos solo en el NavBarComp */
+    margin-left: auto;
+    margin-right: 1rem;
+  }
 </style>
