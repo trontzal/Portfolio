@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
     font-family: 'Cyberpunk';
     src: url('@/assets/fonts/Cyberpunk.otf') format('truetype');
   }
@@ -6,6 +6,11 @@
   @font-face {
     font-family: 'DotGothic16';
     src: url('@/assets/fonts/DotGothic16-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Blanka';
+    src: url('@/assets/fonts/Blanka.otf') format('truetype');
   }
 
   // fuentes ***********************************************
@@ -62,7 +67,7 @@
 .button-49:after {
   width: 150px;
   height: 76px;
-  line-height: 78px;
+  cursor: pointer;
   font-size: 1.2rem;
   font-family: Cyberpunk;
   background: linear-gradient(45deg, transparent 5%, #FF0000 5%);
@@ -149,3 +154,5 @@
     transform: translate(0);
   }
 }
+
+// efecto typing

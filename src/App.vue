@@ -26,7 +26,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    font-family: DotGothic16;
+    font-family: Blanka;
   }
 
 
