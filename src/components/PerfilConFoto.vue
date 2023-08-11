@@ -32,6 +32,9 @@
         width: 80%;
         align-self: center;
     }
+    #PerfilConFoto > div >div{
+        margin-top: 1rem;
+    }
 
     #PerfilConFoto > div > div > p{
         color: white;

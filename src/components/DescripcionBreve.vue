@@ -12,12 +12,18 @@
             Apasionado de la programación Full Stack con experiencia del bootcamp de Peñascal F5. Comprometido con la creación de soluciones tecnológicas y con un enfoque tanto en el desarrollo front-end como en el back-end. {{ parrafoRevelado }}<span class="blinking-cursor"></span>
         </p>
 
-        <router-link to="/sobreMi" class="btnPaginaInicio"><button class="button-49" role="button">Saber mas</button></router-link>
+        <router-link to="/sobreMi" class="btnPaginaInicio">
+            <btnComp>Saber mas</btnComp>
+        </router-link>
     </div>
 </template>
 
 <script>
+import btnComp from '@/components/btnComp.vue';
 export default{
+    components:{
+        btnComp
+    },
     data(){
         return{
             parrafo: "Listo para aportar mi entusiasmo y habilidades a proyectos innovadores.",
