@@ -5,7 +5,7 @@
         </div>
         <div class="exteriorBtnNav">
             <div class="icono">
-                <img src="@/assets/iconos/icon_home_.png" alt="">
+                <img :src="srcIcono" alt="">
             </div>
             <div class="textoHover">
                 <slot></slot>
@@ -16,6 +16,17 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        srcIcono: {
+            type: String,
+            required: true
+        }
+    }
+}
+</script>
 
 <style>
     .hover{
