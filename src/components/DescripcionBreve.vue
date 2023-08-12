@@ -9,7 +9,7 @@
             </p>
         </div>
         <p class="pequena" id="descripcion">
-            Apasionado de la programación Full Stack con experiencia del bootcamp de Peñascal F5. Comprometido con la creación de soluciones tecnológicas y con un enfoque tanto en el desarrollo front-end como en el back-end. {{ parrafoRevelado }}<span class="blinking-cursor"></span>
+            Apasionado de la programación Full Stack con experiencia del bootcamp Peñascal F5. Comprometido con la creación de soluciones tecnológicas y con un enfoque tanto en el desarrollo front-end como en el back-end. {{ parrafoRevelado }}<span class="blinking-cursor"></span>
         </p>
 
         <router-link to="/sobreMi" class="btnPaginaInicio">

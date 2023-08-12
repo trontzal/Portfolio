@@ -13,6 +13,10 @@
     src: url('@/assets/fonts/Elianto-Regular.otf') format('truetype');
   }
 
+  *{
+    text-decoration: none;
+  }
+
   // fuentes ***********************************************
   .pequena{
     font-size: 1.7rem;
