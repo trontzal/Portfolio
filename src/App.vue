@@ -38,5 +38,7 @@
     align-items: center; /* Centramos verticalmente los elementos solo en el NavBarComp */
     margin-left: auto;
     margin-right: 1rem;
+    width: 14%;
+    justify-content: end;
   }
 </style>

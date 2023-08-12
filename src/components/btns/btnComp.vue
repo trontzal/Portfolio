@@ -14,8 +14,8 @@
 
 <style>
     .btnContainer{
-        height: 100px;
-        width: 250px;
+        height: 80px;
+        width: 200px;
         display: flex; 
         flex-direction: column;
         justify-content: center;

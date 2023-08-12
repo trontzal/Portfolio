@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import btnComp from '@/components/btnComp.vue';
+import btnComp from '@/components/btns/btnComp.vue';
 export default{
     components:{
         btnComp
@@ -63,7 +63,7 @@ export default{
 
 <style>
     #DescripcionBreve{
-        width: 75%;
+        width: 80%;
         margin-left: 3%;
         display: flex;
         flex-direction: column;
@@ -74,7 +74,7 @@ export default{
     }
 
     #descripcion{
-        width: 80%;
+        width: 90%;
         margin-top: 2rem;
         margin-bottom: 2rem;
         border-left: solid 2px #FF0000;
