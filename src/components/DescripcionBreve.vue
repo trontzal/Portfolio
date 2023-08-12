@@ -1,10 +1,10 @@
 <template>
     <div id="DescripcionBreve">
         <div class="titulo">
-            <img src="../assets/inicio/titulo.png" alt="">
+            <h1 class="grande">Gonzalo Lecumberri</h1>
         </div>
         <div>
-            <p class="cyberpunk mediana sombra" id="sobreMi">
+            <p class="mediana sombra" id="sobreMi">
                 Sobre mi
             </p>
         </div>
@@ -102,6 +102,11 @@ export default{
 
     .btnPaginaInicio{
         align-self: center;
+    }
+
+    .titulo{
+        text-shadow: 8px 6px 0px #FFFFFF;
+        margin: 4rem 0 2rem 0;
     }
 
 </style>
