@@ -5,7 +5,8 @@ const routes = [
   {
     path: '/',
     name: 'inicio',
-    component: InicioView
+    component: InicioView,
+    exact: true
   },
   {
     path: '/sobreMi',
@@ -13,7 +14,8 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "sobre mi" */ '../views/SobreMiView.vue')
+    component: () => import(/* webpackChunkName: "sobre mi" */ '../views/SobreMiView.vue'),
+    exact: true
   },
   {
     path: '/portfolio',
@@ -21,7 +23,8 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "portfolio" */ '../views/PortfolioView.vue')
+    component: () => import(/* webpackChunkName: "portfolio" */ '../views/PortfolioView.vue'),
+    exact: true
   },
   {
     path: '/contacto',
@@ -29,8 +32,9 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "contacto" */ '../views/ContactoView.vue')
-  }
+    component: () => import(/* webpackChunkName: "contacto" */ '../views/ContactoView.vue'),
+    exact: true
+    }
 ]
 
 const router = createRouter({

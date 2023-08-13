@@ -45,9 +45,7 @@ export default{
                 }else{
                     clearInterval(revealInterval);
                 }
-            },30);
-
-            // Actualizar la vista en cada iteración
+            },15);
             const updateView = () => {
                 this.$forceUpdate();
                 if (indexActual < texto.length) {
