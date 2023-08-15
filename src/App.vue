@@ -1,9 +1,9 @@
 <template>
-
     <router-view/>
     <div id="navBar">
       <NavBarComp />
     </div>
+  
 
 </template>
 
@@ -23,22 +23,19 @@
   #app {
     background: rgb(255,255,1);
     background: linear-gradient(180deg, rgba(255,255,1,1) 0%, rgba(255,255,1,1) 40%, rgba(0,0,0,1) 100%);
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     display: flex;
     font-family: Elianto;
   }
-
-
-
-
 
   #navBar {
     display: flex;
     align-items: center; /* Centramos verticalmente los elementos solo en el NavBarComp */
     margin-left: auto;
     margin-right: 1rem;
-    width: 14%;
+    width: 15%;
     justify-content: end;
+    z-index: 1;
   }
 </style>

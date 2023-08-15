@@ -3,12 +3,12 @@
         <img src="@/assets/inicio/marcoConFoto.png" alt="" id="fotoCara">
         <div class="mediana">
             <div>
-                <p>Gonzalo</p>
-                <p>&nbsp;Lekunberri</p>
+                <p>GONZALO</p>
+                <p>&nbsp;LECUMBERRI</p>
             </div>
             <div>
-                <p class="efecto">Full Stack </p>
-                <p>&nbsp;Developer</p>
+                <p class="efecto">FULL STACK</p>
+                <p>&nbsp;DEVELOPER</p>
             </div>
         </div>
     </div>
@@ -26,6 +26,8 @@
         flex-direction: column;
         gap: 2rem;
         justify-content: center;
+        z-index: 1;
+        height: 100vh;
     }
 
     #fotoCara{

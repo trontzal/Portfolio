@@ -1,7 +1,9 @@
 <template>
+    <div id="lineas">
+    </div>
     <div id="DescripcionBreve">
         <div class="titulo">
-            <h1 class="grande">Gonzalo Lecumberri</h1>
+            <h1 class="grande">GONZALO LECUMBERRI</h1>
         </div>
         <div>
             <p class="mediana sombra" id="sobreMi">
@@ -65,6 +67,8 @@ export default{
         margin-left: 3%;
         display: flex;
         flex-direction: column;
+        z-index: 1;
+        height: 100vh;
     }
 
     #sobreMi{

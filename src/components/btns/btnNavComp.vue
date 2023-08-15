@@ -79,7 +79,7 @@ export default {
     }
 
     .hover:hover .textoHover{
-        width: 80px;
+        width: 100px;
     }
 
     .hover:hover .icono{
