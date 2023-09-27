@@ -5,6 +5,7 @@
       <h2 class="sombraTitulo">SOBRE MI</h2>
     </div>
     <div class="contenidosSobreMi">
+
       <cuadradoComp>
         <datosPersonales></datosPersonales>
       </cuadradoComp>
@@ -14,12 +15,9 @@
       </cuadradoComp>
 
       <cuadradoComp>
-        <div class="dentroCuadrado">
-          <p>aqui peñascal f5 </p>
-        </div>
+        <experiencia></experiencia>
       </cuadradoComp>
 
-      <!-- meter el otro componente aqui para responsive -->
     </div>
   </div>
 </template>
@@ -28,12 +26,14 @@
 import cuadradoComp from "@/components/cuadradoComp.vue"
 import datosPersonales from "@/components/SobreMi/datosPersonales.vue"
 import stack from "@/components/SobreMi/stack.vue"
+import experiencia from "@/components/SobreMi/experiencia.vue"
 
 export default{
   components:{
     cuadradoComp,
     datosPersonales,
     stack,
+    experiencia
   }
 }
 </script>
@@ -64,6 +64,7 @@ export default{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    margin: 0 20px 0 20px;
   }
 
   .grid{

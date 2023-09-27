@@ -6,9 +6,9 @@ import '@/assets/styles/globales.scss'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
 
-library.add(faLinkedin,faGithub);
+library.add(faLinkedin,faGithub,faHtml5,faCss3);
 
 
 createApp(App).use(store).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
