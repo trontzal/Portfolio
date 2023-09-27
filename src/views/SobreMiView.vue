@@ -4,13 +4,18 @@
       <h2 class="tituloVista">SOBRE MI</h2>
       <h2 class="sombraTitulo">SOBRE MI</h2>
     </div>
-    <div class="wrap">
+    <div class="contenidosSobreMi">
+      <cuadradoComp>
+        <datosPersonales></datosPersonales>
+      </cuadradoComp>
+
+      <cuadradoComp>
+        <stack></stack>
+      </cuadradoComp>
+
       <cuadradoComp>
         <div class="dentroCuadrado">
-          <p>Nombre:</p>
-            <p>Gonzalo</p>
-          <p>Apellidos:</p>
-            <p>Lecumberri Bergareche</p>
+          <p>aqui peñascal f5 </p>
         </div>
       </cuadradoComp>
 
@@ -21,10 +26,14 @@
 
 <script>
 import cuadradoComp from "@/components/cuadradoComp.vue"
+import datosPersonales from "@/components/SobreMi/datosPersonales.vue"
+import stack from "@/components/SobreMi/stack.vue"
 
 export default{
   components:{
-    cuadradoComp
+    cuadradoComp,
+    datosPersonales,
+    stack,
   }
 }
 </script>
@@ -34,6 +43,12 @@ export default{
     display: flex;
     width: 100%;
     flex-direction: column;
+  }
+
+  .contenidosSobreMi{
+    display: flex;
+    flex-wrap: wrap;
+
   }
 
   .tituloSobreMi{
@@ -46,9 +61,20 @@ export default{
   .dentroCuadrado{
     color: white;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+
+  .linea{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+    padding-bottom: 0.3rem;
   }
 
   .tituloVista{
@@ -66,6 +92,23 @@ export default{
     font-size: 5rem;
     top: 0;
     left: 0;
+  }
 
+  .tituloPequeno{
+    align-self: center;
+  }
+
+  .linkedin{
+    color: blue;
+    font-size: 24px;
+  }
+
+  .gitHub{
+    color:white;
+    font-size: 24px;
+  }
+
+  .gmail{
+    margin-top: 1rem;
   }
 </style>

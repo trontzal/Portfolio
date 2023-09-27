@@ -29,7 +29,8 @@
 
     .fondoCuadrado{
         background-color: black;
-        margin: 0 20px 0 20px;    
+        margin: 0 20px 0 20px;   
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
 
