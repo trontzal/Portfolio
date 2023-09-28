@@ -11,10 +11,10 @@
         <img src="@/assets/iconos/usuario.png" alt="" class="iconoPequeno">
         <p>SOBRE MI</p>
     </router-link>
-    <router-link to="/contacto" class="routerPequeno">
+    <!-- <router-link to="/contacto" class="routerPequeno">
         <img src="@/assets/iconos/contacto.png" alt="" class="iconoPequeno">
         <p>CONTACTO</p>
-    </router-link>
+    </router-link> -->
 </template>
 
 <script>

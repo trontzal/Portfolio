@@ -9,9 +9,9 @@
     <router-link to="/sobreMi" class="router">
       <btnNavComp :srcIcono="require('@/assets/iconos/usuario.png')">SOBRE MI</btnNavComp>
     </router-link>
-    <router-link to="/contacto" class="router">
+    <!-- <router-link to="/contacto" class="router">
       <btnNavComp :srcIcono="require('@/assets/iconos/contacto.png')">CONTACTO</btnNavComp>
-    </router-link>
+    </router-link> -->
   </nav>
 </template>
 

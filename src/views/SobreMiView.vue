@@ -82,28 +82,6 @@ export default{
     padding-bottom: 0.3rem;
   }
 
-  .tituloVista{
-    position: relative;
-    z-index: 2;
-    padding-top: 13px;
-    font-size: 2rem;
-  }
-
-  .sombraTitulo{
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    color: rgba(255, 255, 255, 0.702);
-    font-size: 5rem;
-    top: 0;
-    left: 0;
-  }
-
-  .tituloPequeno{
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-
   .linkedin{
     color: blue;
     font-size: 24px;
