@@ -24,6 +24,11 @@ export default{
         position: relative;
     }
 
+    #ItemPortfolio:hover > div{
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+    }
+
     .imagenPrincipal{
         width: 20rem;
         height: max-content;
@@ -36,11 +41,13 @@ export default{
         width: 100%;
         height: 100%;
         display: flex;
+        transition: background-color 1s ease;
     }
 
     .tituloDentro{
         align-self: center;
         width: 100%;
         text-align: center;
+        transition: color 1s ease;;
     }
 </style>

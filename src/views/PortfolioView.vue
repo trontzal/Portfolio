@@ -11,10 +11,10 @@
             <ItemPortfolio :portfolio="portfolio.WeatherApp">
 
             </ItemPortfolio>
-            <ItemPortfolio :portfolio="portfolio">
+            <ItemPortfolio :portfolio="portfolio.ToPets">
 
             </ItemPortfolio>
-            <ItemPortfolio :portfolio="portfolio">
+            <ItemPortfolio :portfolio="portfolio.Montano">
 
             </ItemPortfolio>
             
@@ -39,9 +39,18 @@ export default{
                     titulo: "Memory Quest"
                 },
                 'WeatherApp':{
-                    imagenPortada: "",
+                    imagenPortada: "/img/principalWeather.b5cb4e09.png",
                     titulo: "Weather App"
+                },
+                'ToPets':{
+                    imagenPortada: "/img/topetsprincipal.f226a948.png",
+                    titulo: "ToPets"
+                },
+                'Montano':{
+                    imagenPortada: "/img/montanoprincipal.3fe50311.png",
+                    titulo: "Montano"
                 }
+                
             }
         }
     }
