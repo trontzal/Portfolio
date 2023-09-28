@@ -1,29 +1,38 @@
 <template>
     <div class="dentroStack">
         <div class="tituloPequeno">
-            <h3>Habilidades</h3>
+            <h3>HABILIDADES</h3>
         </div>
         <div class="wrapStack">
-            <div class="iconoStack">
-                <font-awesome-icon :icon="['fab', 'html5']" />
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/html5.png" alt="">
             </div>
-            <div class="iconoStack">
-                <font-awesome-icon :icon="['fab', 'css3']" />
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/css3.png" alt="">
             </div>
-            <div class="iconoStack">
-                <font-awesome-icon :icon="['fab', 'js']" />
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/js.png" alt="">
             </div>
-            <div class="iconoStack">
-                <font-awesome-icon :icon="['fab', 'html5']" />
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/vue.png" alt="">
             </div>
-            <div class="iconoStack">
-                <font-awesome-icon :icon="['fab', 'html5']" />
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/python.png" alt="">
             </div>
-            <div class="iconoStack">
-                <font-awesome-icon :icon="['fab', 'html5']" />
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/figma.png" alt="">
             </div>
-            <div class="iconoStack">
-                <font-awesome-icon :icon="['fab', 'html5']" />
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/boostrap.png" alt="">
+            </div>
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/mysql.png" alt="">
+            </div>
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/flask.jpg" alt="">
+            </div>
+            <div>
+                <img class="iconoStack" src="@/assets/IconosHabilidades/quasar.png" alt="">
             </div>
         </div>
     </div>
@@ -36,20 +45,16 @@
 </script>
 
 <style scoped>
-
-    .dentroStack{
-        color: white;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-        margin: 0 20px 0 20px;
-    }
-
     .wrapStack{
         display: flex;
         flex-direction: row;  
-        gap: 2rem;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .iconoStack{
+        height: 4rem;
     }
 
 </style>

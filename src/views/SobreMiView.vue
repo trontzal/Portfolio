@@ -6,17 +6,21 @@
     </div>
     <div class="contenidosSobreMi">
 
-      <cuadradoComp>
-        <datosPersonales></datosPersonales>
+      <cuadradoComp id="DatosPersonales">
+        <datosPersonales class="dentroCuadrado datosPersonales"></datosPersonales>
       </cuadradoComp>
 
-      <cuadradoComp>
-        <stack></stack>
-      </cuadradoComp>
 
-      <cuadradoComp>
-        <experiencia></experiencia>
-      </cuadradoComp>
+      <div class="juntosFlex">
+        <cuadradoComp>
+          <stack class="dentroCuadrado cuadradoStack"></stack>
+        </cuadradoComp>
+
+
+        <cuadradoComp>
+          <experiencia class="dentroCuadrado flexExperiencia"></experiencia>
+        </cuadradoComp>
+      </div>
 
     </div>
   </div>
@@ -39,6 +43,7 @@ export default{
 </script>
 
 <style>
+
   #SobreMiView{
     display: flex;
     width: 100%;
@@ -47,8 +52,7 @@ export default{
 
   .contenidosSobreMi{
     display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: row;
   }
 
   .tituloSobreMi{
@@ -61,17 +65,17 @@ export default{
   .dentroCuadrado{
     color: white;
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    margin: 0 20px 0 20px;
   }
 
-  .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+  .datosPersonales{
+    width: 20rem;
   }
+
+  .fixed{
+    position: fixed;
+  }
+
+
 
   .linea{
     border-bottom: 1px solid rgba(128, 128, 128, 0.295);
@@ -96,7 +100,8 @@ export default{
   }
 
   .tituloPequeno{
-    align-self: center;
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
   .linkedin{
@@ -112,4 +117,20 @@ export default{
   .gmail{
     margin-top: 1rem;
   }
+
+  @media  screen and (max-width:900px) {
+      .contenidosSobreMi{
+        display: flex;
+        flex-direction: column;
+      }
+      .sombraTitulo{
+        font-size: 3rem;
+      }
+      #DatosPersonales{
+        width: 100%;
+      }
+      .datosPersonales{
+        width: 90%;
+      }
+    }
 </style>

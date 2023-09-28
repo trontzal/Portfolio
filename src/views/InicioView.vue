@@ -14,3 +14,11 @@
     }
   }
 </script>
+
+<style>
+@media  screen and (max-width:900px) {
+      #PerfilConFoto{
+        display: none;
+      }
+  }
+</style>

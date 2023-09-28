@@ -111,4 +111,14 @@ export default{
         margin: 4rem 0 2rem 0;
     }
 
+
+    @media  screen and (max-width:767px) {
+        #DescripcionBreve{
+            width: 100%;
+        }
+        .btnPaginaInicio{
+            display: none;
+        }
+      
+  }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="fixed">
     <router-link to="/" class="router">
       <btnNavComp :srcIcono="require('@/assets/iconos/icon_home_.png')">INICIO</btnNavComp>
     </router-link>
@@ -36,4 +36,6 @@
       display: flex;
       justify-content: end;
     }
+
+
 </style>

@@ -19,7 +19,6 @@
 
     #Cuadrado{
         margin: 1rem;
-        max-width: min-content;
     }
 
     .esquinaCuadrado{
