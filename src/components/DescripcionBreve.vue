@@ -119,6 +119,10 @@ export default{
         .btnPaginaInicio{
             display: none;
         }
+        #descripcion{
+            padding-bottom: 6rem;
+            height: auto;
+        }
       
   }
 </style>

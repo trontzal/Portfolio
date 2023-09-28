@@ -4,25 +4,43 @@
         <h2 class="tituloVista">PORTFOLIO</h2>
         <h2 class="sombraTitulo">PORTFOLIO</h2>
       </div>
-      <ItemPortfolio :portfolio="portfolio">
+        <Cuadrado class="cuadradoPortfolio">
+            <ItemPortfolio :portfolio="portfolio.MemoryQuest">
 
-      </ItemPortfolio>
+            </ItemPortfolio>
+            <ItemPortfolio :portfolio="portfolio.WeatherApp">
+
+            </ItemPortfolio>
+            <ItemPortfolio :portfolio="portfolio">
+
+            </ItemPortfolio>
+            <ItemPortfolio :portfolio="portfolio">
+
+            </ItemPortfolio>
+            
+        </Cuadrado>
     </div>
 </template>
 
 <script>
 import ItemPortfolio from "@/components/Portfolio/ItemPortfolio.vue"
+import Cuadrado from "@/components/cuadradoComp.vue";
 
 export default{
     components:{
-        ItemPortfolio
+        ItemPortfolio,
+        Cuadrado
     },
     data(){
         return{
             portfolio:{
                 'MemoryQuest':{
-                    imagenPortada: "Esta seria la imagen",
-                    titulo: "Este seria el titulo"
+                    imagenPortada: "/img/principalMemory.372cfc1d.png",
+                    titulo: "Memory Quest"
+                },
+                'WeatherApp':{
+                    imagenPortada: "",
+                    titulo: "Weather App"
                 }
             }
         }
@@ -35,5 +53,13 @@ export default{
         display: flex;
         width: 100%;
         flex-direction: column;
+    }
+
+    .cuadradoPortfolio > div{
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
     }
 </style>

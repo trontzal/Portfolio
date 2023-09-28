@@ -1,5 +1,7 @@
 <template>
-    <router-view/>
+
+    <router-view class="routerView"/>
+
     <div id="navBar">
       <NavBarComp />
     </div>
@@ -49,7 +51,7 @@
 
   #navBarPequeno{
     background-color: rgb(0, 0, 0);
-    position: fixed;
+    position: absolute;
     bottom: 0;
     z-index: 100;
     width: 100%;
@@ -65,5 +67,8 @@
     #navBarPequeno{
       display: flex;
     }  
+    .routerView{
+      
+    }
   }
 </style>

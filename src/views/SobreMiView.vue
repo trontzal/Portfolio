@@ -17,7 +17,7 @@
         </cuadradoComp>
 
 
-        <cuadradoComp>
+        <cuadradoComp class="espacioAbajo">
           <experiencia class="dentroCuadrado flexExperiencia"></experiencia>
         </cuadradoComp>
       </div>
@@ -50,17 +50,12 @@ export default{
     flex-direction: column;
   }
 
+
   .contenidosSobreMi{
     display: flex;
     flex-direction: row;
   }
 
-  .tituloSobreMi{
-    text-align: center;
-    margin: 2rem;
-    position: relative;
-
-  }
 
   .dentroCuadrado{
     color: white;
@@ -110,5 +105,9 @@ export default{
       .datosPersonales{
         width: 90%;
       }
+      .espacioAbajo{
+        padding-bottom: 6rem;
+      }
+
     }
 </style>
