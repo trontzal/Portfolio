@@ -54,13 +54,16 @@
     z-index: 100;
     width: 100%;
     height: 5rem;
-    display: flex;
+    display: none;
     justify-content: space-between;
   }
 
   @media  screen and (max-width:768px) {
     #navBar{
       display: none;
-    }    
+    } 
+    #navBarPequeno{
+      display: flex;
+    }  
   }
 </style>
