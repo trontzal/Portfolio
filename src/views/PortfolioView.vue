@@ -12,26 +12,21 @@
                 :key="index">
             </ItemPortfolio>
         </Cuadrado>
-        <div v-if="overlay" id="OverlayPortfolio" @click.self="overlay = false">
-            <div class="overlayDentro">
-                <h3 class="tituloOverlay">TITULO</h3>
-                <p>Autor: Trabajo grupal en peñascal</p>
-                <p>Tecnologias:  Vue, figma, etc</p>
-                <p>gitHub: <a href="">Link</a></p>
-                <p>gitHub backend: <a href=""></a>Link</p>
-            </div>
-        </div>
+
+        <OverlayPortfolio :overlay="overlay" :selectedPortfolio="selectedPortfolio"></OverlayPortfolio>
     </div>
 </template>
 
 <script>
 import ItemPortfolio from "@/components/Portfolio/ItemPortfolio.vue"
 import Cuadrado from "@/components/cuadradoComp.vue";
+import OverlayPortfolio from "@/components/Portfolio/OverlayPortfolio.vue";
 
 export default{
     components:{
         ItemPortfolio,
-        Cuadrado
+        Cuadrado,
+        OverlayPortfolio
     },
     methods: {
         showOverlay(portfolio1) {
@@ -41,7 +36,7 @@ export default{
     },
     data(){
         return{
-            overlay: true,
+            overlay: false,
             selectedPortfolio: null,
             portfolio:{
                 'MemoryQuest':{
@@ -72,6 +67,7 @@ export default{
         }
     }
 }
+
 </script>
 
 <style>
@@ -88,31 +84,5 @@ export default{
         gap: 1rem;
     }
 
-    /* ovrlay ------------------- */
-
-    #OverlayPortfolio{
-        background-color: rgba(0, 0, 0, 0.199);
-        color: white;
-        position: absolute;
-        z-index: 50;
-        width: 100%;
-        height:100vh;
-    }
-
-    .overlayDentro{
-        background-color: black;
-        color: white;
-        position: absolute;
-        z-index: 100;
-        width: 50%;
-        height: 80%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .tituloOverlay{
-        text-align: center;
-        margin-top: 1rem;
-    }
+    
 </style>
