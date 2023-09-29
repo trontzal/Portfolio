@@ -1,9 +1,10 @@
 <template>
     <div id="ItemPortfolio">
         <div class="tituloItemPortfolio">
-            <p class="tituloDentro mediana">{{ portfolio.titulo }}</p>
+            <p v-if="portfolio.titulo" class="tituloDentro mediana">{{ portfolio.titulo }}</p>
         </div>
-        <img :src="portfolio.imagenPortada" alt="" class="imagenPrincipal">
+        <img v-if="portfolio.imagenPortada" :src="require(`@/assets/Portfolio/${portfolio.imagenPortada}`)" class="imagenPrincipal">
+        <img v-else src="@/assets/Portfolio/enProceso.jpg" alt="No hay imagen" class="imagenPrincipal">
     </div>
 </template>
 
@@ -26,7 +27,7 @@ export default{
 
     #ItemPortfolio:hover > div{
         background-color: rgba(0, 0, 0, 0);
-        color: black;
+        color: rgba(0, 0, 0, 0);
     }
 
     .imagenPrincipal{
