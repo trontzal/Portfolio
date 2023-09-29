@@ -19,7 +19,7 @@
         </div>
         <div>
             <p>Gmail:</p>
-            <p class="gmail"><a :href="'mailto:gonzalo.lekunberri@gmail.com'">gonzalo.lekunberri@gmail.com</a></p>
+            <p class="gmail"><a class="link" :href="'mailto:gonzalo.lekunberri@gmail.com'">gonzalo.lekunberri@gmail.com</a></p>
         </div>
     </div>
 </template>

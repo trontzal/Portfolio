@@ -23,6 +23,7 @@ export default{
         height: auto;
         margin:1rem;
         position: relative;
+        cursor: pointer;
     }
 
     #ItemPortfolio:hover > div{

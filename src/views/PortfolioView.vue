@@ -13,7 +13,10 @@
             </ItemPortfolio>
         </Cuadrado>
 
-        <OverlayPortfolio :overlay="overlay" :selectedPortfolio="selectedPortfolio"></OverlayPortfolio>
+        <OverlayPortfolio 
+            :overlay="overlay" 
+            :selectedPortfolio="selectedPortfolio" 
+            @cerrarOverlay="cerrarOverlay"></OverlayPortfolio>
     </div>
 </template>
 
@@ -32,6 +35,9 @@ export default{
         showOverlay(portfolio1) {
         this.overlay = true;
         this.selectedPortfolio = portfolio1;
+        },
+        cerrarOverlay(){
+            this.overlay = false;
         }
     },
     data(){
@@ -41,27 +47,69 @@ export default{
             portfolio:{
                 'MemoryQuest':{
                     imagenPortada: "MemoryQuest/principalMemory.png",
-                    titulo: "Memory Quest"
+                    titulo: "Memory Quest",
+                    autor: "Yo",
+                    tecnologias: "Vue 3, Figma, Python, Flask, MySQL, Railway",
+                    githubFront: "https://github.com/trontzal/MemoryQuestFront",
+                    githubBack: "https://github.com/trontzal/MemoryQuestBack",
+                    descripcion: "",
+                    img1: "MemoryQuest/secundariaWeather.png",
+                    img2: "MemoryQuest/terceraWeather.png"
                 },
                 'WeatherApp':{
                     imagenPortada: "WeatherApp/principalWeather.png",
-                    titulo: "Weather App"
+                    titulo: "Weather App",
+                    autor: "",
+                    tecnologias: "",
+                    githubFront: "",
+                    githubBack: "",
+                    descripcion: "",
+                    img1: "",
+                    img2: ""
                 },
                 'ToPets':{
                     imagenPortada: "ToPets/topetsprincipal.png",
-                    titulo: "ToPets"
+                    titulo: "ToPets",
+                    autor: "",
+                    tecnologias: "",
+                    githubFront: "",
+                    githubBack: "",
+                    descripcion: "",
+                    img1: "",
+                    img2: ""
                 },
                 'Montano':{
                     imagenPortada: "Montano/montanoprincipal.png",
-                    titulo: "Montano"
+                    titulo: "Montano",
+                    autor: "",
+                    tecnologias: "",
+                    githubFront: "",
+                    githubBack: "",
+                    descripcion: "",
+                    img1: "",
+                    img2: ""
                 },
                 'ToDo':{
                     imagenPortada: "",
-                    titulo: "To Do"
+                    titulo: "To Do",
+                    autor: "",
+                    tecnologias: "",
+                    githubFront: "",
+                    githubBack: "",
+                    descripcion: "",
+                    img1: "",
+                    img2: ""
                 },
                 'Progres':{
                     imagenPortada: "",
-                    titulo: ""
+                    titulo: "",
+                    autor: "",
+                    tecnologias: "",
+                    githubFront: "",
+                    githubBack: "",
+                    descripcion: "",
+                    img1: "",
+                    img2: ""
                 }
             }
         }
@@ -81,7 +129,7 @@ export default{
         color: white;
         display: flex;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     
