@@ -12,11 +12,14 @@
                     <p>gitHub backend: <a href=""></a>Link</p>
                 </div>
             </div>
+            <carrusel></carrusel>
         </div>
     </div>
 </template>
 
 <script>
+import carrusel from "@/components/Portfolio/OverlayCarrusel/carrusel.vue"
+
 export default{
     props:{
         overlay:{
@@ -25,6 +28,9 @@ export default{
         selectedPortfolio:{
             type: Object
         }
+    },
+    components:{
+        carrusel
     }
 }
 </script>
@@ -33,7 +39,7 @@ export default{
     /* ovrlay ------------------- */
 
     #OverlayPortfolio{
-        background-color: rgba(0, 0, 0, 0.199);
+        background-color: rgba(241, 239, 239, 0.199);
         color: white;
         position: absolute;
         z-index: 50;
