@@ -1,5 +1,5 @@
 <template>
-    <div v-if="overlay" id="OverlayPortfolio" @click.self="overlay = false">
+    <div v-if="overlay" id="OverlayPortfolio" @click="$emit('cerrarOverlay')">
         <div class="overlayDentro">
             <div class="cerrarOverlay" @click="$emit('cerrarOverlay')">X</div>
             <h3 class="tituloOverlay ">{{ selectedPortfolio.titulo }}</h3>
@@ -40,7 +40,7 @@ export default{
     },
     components:{
     carrusel
-}
+    }
 }
 </script>
 

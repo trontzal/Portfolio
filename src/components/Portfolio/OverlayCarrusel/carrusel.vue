@@ -30,7 +30,7 @@ export default {
   computed: {
     slides() {
       if (this.selectedPortfolio2 && this.selectedPortfolio2.img1) {
-        return [this.selectedPortfolio2.img1, this.selectedPortfolio2.imagenPortada, this.selectedPortfolio2.img2];
+        return [this.selectedPortfolio2.img1, this.selectedPortfolio2.imagenPortada, this.selectedPortfolio2.img2, this.selectedPortfolio2.img3];
       }
       return [];
     }
@@ -42,7 +42,6 @@ export default {
   <style>
 
     .carousel__track{
-        width:120% !important;
         margin:0px -659.6px !important;
     }
     

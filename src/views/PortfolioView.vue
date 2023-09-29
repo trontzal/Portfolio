@@ -33,8 +33,9 @@ export default{
     },
     methods: {
         showOverlay(portfolio1) {
-        this.overlay = true;
-        this.selectedPortfolio = portfolio1;
+            this.overlay = true;
+            this.selectedPortfolio = portfolio1;
+            console.log(this.overlay)
         },
         cerrarOverlay(){
             this.overlay = false;
@@ -54,7 +55,8 @@ export default{
                     githubBack: "https://github.com/trontzal/MemoryQuestBack",
                     descripcion: "",
                     img1: "MemoryQuest/secundariaWeather.png",
-                    img2: "MemoryQuest/terceraWeather.png"
+                    img2: "MemoryQuest/terceraWeather.png",
+                    img3: "MemoryQuest/cuartaMemory.png"
                 },
                 'WeatherApp':{
                     imagenPortada: "WeatherApp/principalWeather.png",
