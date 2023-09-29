@@ -5,12 +5,22 @@
         <h2 class="sombraTitulo">PORTFOLIO</h2>
       </div>
         <Cuadrado class="cuadradoPortfolio">
-            <ItemPortfolio 
-                v-for="portfolio1 in portfolio"
-                :portfolio="portfolio1">
+            <ItemPortfolio
+                @click="showOverlay(portfolio1)"
+                v-for="(portfolio1,index) in portfolio"
+                :portfolio="portfolio1"
+                :key="index">
             </ItemPortfolio>
-            
         </Cuadrado>
+        <div v-if="overlay" id="OverlayPortfolio" @click.self="overlay = false">
+            <div class="overlayDentro">
+                <h3 class="tituloOverlay">TITULO</h3>
+                <p>Autor: Trabajo grupal en peñascal</p>
+                <p>Tecnologias:  Vue, figma, etc</p>
+                <p>gitHub: <a href="">Link</a></p>
+                <p>gitHub backend: <a href=""></a>Link</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -23,8 +33,16 @@ export default{
         ItemPortfolio,
         Cuadrado
     },
+    methods: {
+        showOverlay(portfolio1) {
+        this.overlay = true;
+        this.selectedPortfolio = portfolio1;
+        }
+    },
     data(){
         return{
+            overlay: true,
+            selectedPortfolio: null,
             portfolio:{
                 'MemoryQuest':{
                     imagenPortada: "MemoryQuest/principalMemory.png",
@@ -68,5 +86,33 @@ export default{
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+    }
+
+    /* ovrlay ------------------- */
+
+    #OverlayPortfolio{
+        background-color: rgba(0, 0, 0, 0.199);
+        color: white;
+        position: absolute;
+        z-index: 50;
+        width: 100%;
+        height:100vh;
+    }
+
+    .overlayDentro{
+        background-color: black;
+        color: white;
+        position: absolute;
+        z-index: 100;
+        width: 50%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tituloOverlay{
+        text-align: center;
+        margin-top: 1rem;
     }
 </style>

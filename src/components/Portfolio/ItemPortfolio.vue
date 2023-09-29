@@ -51,4 +51,7 @@ export default{
         text-align: center;
         transition: color 1s ease;;
     }
+
+
+
 </style>

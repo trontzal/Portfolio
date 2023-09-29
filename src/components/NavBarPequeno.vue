@@ -3,14 +3,15 @@
         <img src="@/assets/iconos/icon_home_.png" alt="" class="iconoPequeno">
         <p>INICIO</p>
     </router-link>
-    <router-link to="/portfolio" class="routerPequeno">
-        <img src="@/assets/iconos/portfolio.png" alt="" class="iconoPequeno">
-        <p>PORTOLIO</p>
-    </router-link>
     <router-link to="/sobreMi" class="routerPequeno">
         <img src="@/assets/iconos/usuario.png" alt="" class="iconoPequeno">
         <p>SOBRE MI</p>
     </router-link>
+    <router-link to="/portfolio" class="routerPequeno">
+        <img src="@/assets/iconos/portfolio.png" alt="" class="iconoPequeno">
+        <p>PORTOLIO</p>
+    </router-link>
+
     <!-- <router-link to="/contacto" class="routerPequeno">
         <img src="@/assets/iconos/contacto.png" alt="" class="iconoPequeno">
         <p>CONTACTO</p>
