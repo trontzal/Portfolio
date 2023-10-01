@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     slides() {
-      if (this.selectedPortfolio2 && this.selectedPortfolio2.imagenes) {
+      if (this.selectedPortfolio2 && this.selectedPortfolio2.imagenes.imagenPortada) {
         const imagenesArray = Object.values(this.selectedPortfolio2.imagenes);
         return imagenesArray;
       }

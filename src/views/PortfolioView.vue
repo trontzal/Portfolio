@@ -70,8 +70,9 @@ export default{
                     githubFront: "",
                     githubBack: "",
                     descripcion: "",
-                    img1: "",
-                    img2: ""
+                    imagenes:{
+                        imagenPortada: "WeatherApp/principalWeather.png",
+                    }
                 },
                 'ToPets':{
                     imagenPortada: "ToPets/topetsprincipal.png",
@@ -81,8 +82,9 @@ export default{
                     githubFront: "",
                     githubBack: "",
                     descripcion: "",
-                    img1: "",
-                    img2: ""
+                    imagenes:{
+                        imagenPortada: "ToPets/topetsprincipal.png",
+                    }
                 },
                 'Montano':{
                     imagenPortada: "Montano/montanoprincipal.png",
@@ -92,8 +94,9 @@ export default{
                     githubFront: "",
                     githubBack: "",
                     descripcion: "",
-                    img1: "",
-                    img2: ""
+                    imagenes:{
+                        imagenPortada: "Montano/montanoprincipal.png",
+                    }
                 },
                 'ToDo':{
                     imagenPortada: "",
@@ -103,8 +106,9 @@ export default{
                     githubFront: "",
                     githubBack: "",
                     descripcion: "",
-                    img1: "",
-                    img2: ""
+                    imagenes:{
+                        imagenPortada: "",
+                    }
                 },
                 'Progres':{
                     imagenPortada: "",
@@ -114,8 +118,9 @@ export default{
                     githubFront: "",
                     githubBack: "",
                     descripcion: "",
-                    img1: "",
-                    img2: ""
+                    imagenes:{
+                        imagenPortada: "",
+                    }
                 }
             }
         }
