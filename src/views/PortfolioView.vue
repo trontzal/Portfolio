@@ -55,6 +55,7 @@ export default{
                     githubBack: "https://github.com/trontzal/MemoryQuestBack",
                     descripcion: "",
                     imagenes:{
+                        imagenPortada: "MemoryQuest/principalMemory.png",
                         img1: "MemoryQuest/secundariaWeather.png",
                         img2: "MemoryQuest/terceraWeather.png",
                         img3: "MemoryQuest/cuartaMemory.png"

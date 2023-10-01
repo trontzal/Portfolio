@@ -94,7 +94,11 @@ export default {
 
 .carousel__icon{
   border: 1px solid rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.479);
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+.carousel__icon:hover{
+  scale: 1.05;
 }
 
 </style>
