@@ -1,11 +1,11 @@
 <template>
-    <div v-if="overlay" id="OverlayPortfolio" @click="$emit('cerrarOverlay')">
+    <div v-if="overlay" id="OverlayPortfolio" @click.self="$emit('cerrarOverlay')">
         <div class="overlayDentro">
             <div class="cerrarOverlay" @click="$emit('cerrarOverlay')">X</div>
             <h3 class="tituloOverlay ">{{ selectedPortfolio.titulo }}</h3>
             <div class="gridOverlay">
                 <div class="overlayFlex">
-                    <p class="lineaOverlay">Autor: {{ selectedPortfolio.autor }}</p>
+                    <p class="lineaOverlay">Autor: <br>{{ selectedPortfolio.autor }}</p>
                     <p class="lineaOverlay">Tecnologias:  {{ selectedPortfolio.tecnologias }}</p>
                 </div>
                 <div class="overlayFlex">

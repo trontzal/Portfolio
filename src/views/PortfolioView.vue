@@ -49,14 +49,17 @@ export default{
                 'MemoryQuest':{
                     imagenPortada: "MemoryQuest/principalMemory.png",
                     titulo: "Memory Quest",
-                    autor: "Yo",
+                    autor: "Gonzalo Lecumberri",
                     tecnologias: "Vue 3, Figma, Python, Flask, MySQL, Railway",
                     githubFront: "https://github.com/trontzal/MemoryQuestFront",
                     githubBack: "https://github.com/trontzal/MemoryQuestBack",
                     descripcion: "",
-                    img1: "MemoryQuest/secundariaWeather.png",
-                    img2: "MemoryQuest/terceraWeather.png",
-                    img3: "MemoryQuest/cuartaMemory.png"
+                    imagenes:{
+                        img1: "MemoryQuest/secundariaWeather.png",
+                        img2: "MemoryQuest/terceraWeather.png",
+                        img3: "MemoryQuest/cuartaMemory.png"
+                    }
+
                 },
                 'WeatherApp':{
                     imagenPortada: "WeatherApp/principalWeather.png",
