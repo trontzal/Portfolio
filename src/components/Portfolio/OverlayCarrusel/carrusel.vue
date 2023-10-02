@@ -98,7 +98,7 @@ export default {
 
 .imgCarrusel {
   height: 10rem;
-  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  max-width: 100%; 
   border-radius: 8px;
 }
 
@@ -172,6 +172,10 @@ export default {
 @media  screen and (max-width:900px) {
   .modal-content {
     margin-top: 10rem;
+  }
+
+  .imgCarrusel{
+    height: 8rem;
   }
 }
 </style>
