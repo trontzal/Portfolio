@@ -174,8 +174,12 @@ export default {
     margin-top: 10rem;
   }
 
+  .carousel__slide{
+    padding: 2px;
+  }
+
   .imgCarrusel{
-    height: 8rem;
+    height: 7rem;
   }
 }
 </style>
