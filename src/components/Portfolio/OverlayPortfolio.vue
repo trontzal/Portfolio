@@ -6,11 +6,11 @@
             <div class="flexRows">
                 <div class="gridTextos">
                     <p class="lineaOverlay">Autor(es): {{ selectedPortfolio.autor }}</p>
-                    <p class="lineaOverlay">gitHub: <a class="link" target="_blank" :href="selectedPortfolio.githubFront">{{ selectedPortfolio.githubFront }}</a></p>
+                    <p class="lineaOverlay gitHubOverlay">gitHub: <a class="link" target="_blank" :href="selectedPortfolio.githubFront">{{ selectedPortfolio.githubFront }}</a></p>
                 </div>
                 <div class="gridTextos">
                     <p class="lineaOverlay">Tecnologias:  {{ selectedPortfolio.tecnologias }}</p>
-                    <p v-if="selectedPortfolio.githubBack" class="lineaOverlay">gitHub backend: <a class="link" target="_blank" :href="selectedPortfolio.githubBack">{{ selectedPortfolio.githubBack }}</a></p>
+                    <p v-if="selectedPortfolio.githubBack" class="lineaOverlay gitHubOverlay">gitHub backend: <a class="link" target="_blank" :href="selectedPortfolio.githubBack">{{ selectedPortfolio.githubBack }}</a></p>
                 </div>
             </div>
 
@@ -109,5 +109,30 @@ export default{
         top: 0;
         right: 0;
         cursor: pointer;
+    }
+
+    @media  screen and (max-width:767px) {
+        .overlayDentro{
+            width: 90%;
+            height: 100%;
+
+        }
+
+        .gitHubOverlay{
+            display: none;
+        }
+
+        .gridTextos{
+            display: block;
+        }
+
+        .descripcionOverlay{
+            padding-bottom: 6rem;
+        }
+
+        .cerrarOverlay{
+            margin-top: 1.5rem;
+            font-size: 2rem;
+        }
     }
 </style>

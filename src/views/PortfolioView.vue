@@ -117,7 +117,7 @@ export default{
                         imagenPortada: "",
                     }
                 },
-                'Progres':{
+                '':{
                     imagenPortada: "",
                     titulo: "",
                     autor: "",
