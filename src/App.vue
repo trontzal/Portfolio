@@ -51,7 +51,7 @@
 
   #navBarPequeno{
     background-color: rgb(0, 0, 0);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 100;
     width: 100%;
@@ -67,8 +67,5 @@
     #navBarPequeno{
       display: flex;
     }  
-    .routerView{
-      
-    }
   }
 </style>
