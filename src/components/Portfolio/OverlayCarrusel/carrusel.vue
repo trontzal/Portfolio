@@ -168,6 +168,12 @@ export default {
   scale: 1.2;
 }
 
+
+@media  screen and (max-width:900px) {
+  .modal-content {
+    margin-top: 10rem;
+  }
+}
 </style>
 
 

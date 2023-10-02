@@ -111,11 +111,17 @@ export default{
         cursor: pointer;
     }
 
+    @media  screen and (max-width:900px) {
+       .overlayDentro{
+        width: 80%;
+        height: 70%;
+       } 
+    }
+
     @media  screen and (max-width:767px) {
         .overlayDentro{
             width: 90%;
             height: 100%;
-
         }
 
         .gitHubOverlay{

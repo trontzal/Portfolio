@@ -24,6 +24,7 @@ export default{
         margin:1rem;
         position: relative;
         cursor: pointer;
+        text-align: center;
     }
 
     #ItemPortfolio:hover > div{
@@ -54,6 +55,16 @@ export default{
     }
 
     
+    @media  screen and (max-width:900px) {
+        #ItemPortfolio{
+            width: auto;
+        }
 
+        .imagenPrincipal{
+            width: 15rem;
+        }
+    }
+
+    
 
 </style>
