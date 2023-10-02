@@ -16,8 +16,9 @@
         <OverlayPortfolio 
             :overlay="overlay" 
             :selectedPortfolio="selectedPortfolio" 
-            @cerrarOverlay="cerrarOverlay"></OverlayPortfolio>
+            @cerrarOverlay="cerrarOverlay"/>
     </div>
+   
 </template>
 
 <script>
@@ -150,6 +151,10 @@ export default{
         gap: 0.5rem;
     }
 
-
+    @media  screen and (max-width:768px) {
+        .cuadradoPortfolio > div{
+            margin-bottom: 3rem;
+        }
+    }
     
 </style>
