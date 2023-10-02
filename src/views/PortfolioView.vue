@@ -65,37 +65,44 @@ export default{
                 'WeatherApp':{
                     imagenPortada: "WeatherApp/principalWeather.png",
                     titulo: "Weather App",
-                    autor: "",
-                    tecnologias: "",
-                    githubFront: "",
+                    autor: "Jonathan Echeverria, Yorlin Pachajoa, Edurne Montalban, Gonzalo Lecumberri,     Jone Guerrero, May Torres",
+                    tecnologias: "Vue 3, Figma, Bootstrap, Jest, Trello, Canva",
+                    githubFront: "https://github.com/trontzal/AppWeather",
                     githubBack: "",
                     descripcion: "",
                     imagenes:{
                         imagenPortada: "WeatherApp/principalWeather.png",
+                        img1: "WeatherApp/secundariaWeather.png",
+                        img2: "WeatherApp/terceraWeather.png",
+                        img3: "WeatherApp/cuartaWeather.png"
                     }
                 },
                 'ToPets':{
                     imagenPortada: "ToPets/topetsprincipal.png",
                     titulo: "ToPets",
-                    autor: "",
-                    tecnologias: "",
-                    githubFront: "",
+                    autor: "Amaia Berrocal, Anyell Mendoza, Nasser Oufallah, Gonzalo Lecumberri y Jessica Mosteiro",
+                    tecnologias: "Html5, Css3, Sass, Bootstrap5, JavaScript, Trello, Canvas, Figma",
+                    githubFront: "https://github.com/trontzal/ToPets-Ecomerce",
                     githubBack: "",
                     descripcion: "",
                     imagenes:{
                         imagenPortada: "ToPets/topetsprincipal.png",
+                        img1: "ToPets/topetssegunda.png",
+                        img2: "ToPets/topetstercera.png"
                     }
                 },
                 'Montano':{
                     imagenPortada: "Montano/montanoprincipal.png",
                     titulo: "Montano",
-                    autor: "",
-                    tecnologias: "",
-                    githubFront: "",
-                    githubBack: "",
+                    autor: "Gonzalo Lecumberri, Jesus Pinto, Jone Guerrero, Jonathan Echeverria, Mohamed el Hibrahimi",
+                    tecnologias: "Vue 3, Python, Flask, MySQL, Jest, Boostrap, Figma, Trello",
+                    githubFront: "https://github.com/trontzal/Montano_Front",
+                    githubBack: "https://github.com/trontzal/Montano_Back",
                     descripcion: "",
                     imagenes:{
                         imagenPortada: "Montano/montanoprincipal.png",
+                        img1: "Montano/montanoSecundaria.png",
+                        img2: "Montano/montanoTercera.png"
                     }
                 },
                 'ToDo':{

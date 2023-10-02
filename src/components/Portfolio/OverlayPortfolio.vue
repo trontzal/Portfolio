@@ -3,13 +3,13 @@
         <div class="overlayDentro">
             <div class="cerrarOverlay" @click="$emit('cerrarOverlay')">X</div>
             <h3 class="tituloOverlay ">{{ selectedPortfolio.titulo }}</h3>
-            <div class="gridOverlay">
-                <div class="overlayFlex">
-                    <p class="lineaOverlay">Autor: <br>{{ selectedPortfolio.autor }}</p>
-                    <p class="lineaOverlay">Tecnologias:  {{ selectedPortfolio.tecnologias }}</p>
-                </div>
-                <div class="overlayFlex">
+            <div class="flexRows">
+                <div class="gridTextos">
+                    <p class="lineaOverlay">Autor(es): {{ selectedPortfolio.autor }}</p>
                     <p class="lineaOverlay">gitHub: <a class="link" target="_blank" :href="selectedPortfolio.githubFront">{{ selectedPortfolio.githubFront }}</a></p>
+                </div>
+                <div class="gridTextos">
+                    <p class="lineaOverlay">Tecnologias:  {{ selectedPortfolio.tecnologias }}</p>
                     <p v-if="selectedPortfolio.githubBack" class="lineaOverlay">gitHub backend: <a class="link" target="_blank" :href="selectedPortfolio.githubBack">{{ selectedPortfolio.githubBack }}</a></p>
                 </div>
             </div>
@@ -20,7 +20,9 @@
 
             <div class="overlayFlex descripcionOverlay">
                 <p>Descripcion:</p>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque natus rem quod quo, assumenda doloribus dolore aperiam vero repellat. Libero dolorum consequatur corporis ratione obcaecati est delectus non maxime nostrum!</p>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque natus rem quod quo, assumenda doloribus dolore aperiam vero repellat. Libero dolorum consequatur corporis ratione obcaecati est delectus non maxime nostrum!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus consequatur similique nostrum, beatae hic optio autem recusandae ipsum ratione voluptates veritatis a magni porro labore voluptate fuga? Assumenda, repudiandae quaerat.
+                </p>
             </div>
         </div>
     </div>
@@ -67,6 +69,8 @@ export default{
         left: 50%;
         transform: translate(-50%, -50%);
         border: 20px solid rgba(0, 0, 0, 0.541);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        overflow: auto;
     }
 
 
@@ -75,16 +79,17 @@ export default{
         margin-top: 1rem;
     }
 
-    .gridOverlay{
+    .gridTextos{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 1.5rem 0 2rem 2rem;
+        align-items: end;
     }
 
-    .overlayFlex{
+    .flexRows{
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        margin-top: 1rem;
     }
 
     .descripcionOverlay{

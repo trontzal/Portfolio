@@ -3,7 +3,11 @@
     <Carousel :items-to-show="2" :wrap-around="true" class="carrusel">
       <Slide v-for="(slide, index) in slides" :key="index">
         <div class="carousel__item">
-          <img :src="require(`@/assets/Portfolio/${slide}`)" class="imgCarrusel" alt="Portfolio Image">
+          <img
+            :src="require(`@/assets/Portfolio/${slide}`)"
+            class="imgCarrusel"
+            alt="Portfolio Image"
+            @click="showImage(slide)">
         </div>
       </Slide>
       <template #addons>
@@ -11,6 +15,14 @@
         <Pagination />
       </template>
     </Carousel>
+
+    <!-- Cuando se selecciona la imagen -->
+    <div v-if="selectedImage" class="image-modal">
+      <div class="modal-content">
+        <span class="close" @click="closeImageModal">X</span>
+        <img :src="require(`@/assets/Portfolio/${selectedImage}`)" alt="Portfolio Image" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -23,6 +35,11 @@ export default {
   props: {
     selectedPortfolio2: {
       type: Object
+    }
+  },
+  data(){
+    return{
+      selectedImage : null
     }
   },
   components: {
@@ -39,6 +56,14 @@ export default {
       }
       return ["noImage.jpg"];
     }
+  },
+  methods: {
+    showImage(image) {
+      this.selectedImage = image
+    },
+    closeImageModal() {
+      this.selectedImage = null
+    },
   },
 };
 </script>
@@ -99,6 +124,48 @@ export default {
 
 .carousel__icon:hover{
   scale: 1.05;
+}
+
+/* cuando se selecciona la imagen */
+
+.image-modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  transform: translateY(-50%);
+  margin-top: 3rem;
+}
+
+.modal-content > img{
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.close:hover{
+  scale: 1.2;
 }
 
 </style>
