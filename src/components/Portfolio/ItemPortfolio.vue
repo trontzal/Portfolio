@@ -62,9 +62,14 @@ export default{
 
         .imagenPrincipal{
             width: 15rem;
+            
         }
     }
 
-    
+    @media  screen and (max-width:350px) {
+        .imagenPrincipal{
+            width: 90%;
+        }
+    }    
 
 </style>
