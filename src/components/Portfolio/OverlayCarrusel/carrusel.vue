@@ -148,10 +148,14 @@ export default {
   width: -webkit-fill-available;
   transform: translateY(-50%);
   margin-top: 3rem;
+
 }
 
 .modal-content > img{
-  width: 100%;
+  max-width: -webkit-fill-available;
+  max-height: 90%;
+  display: flex;
+  margin: 0 auto;
 }
 
 .close {
@@ -159,7 +163,7 @@ export default {
   top: 0;
   right: 0;
   padding: 1rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255,255,1);
   font-size: 2rem;
   cursor: pointer;
 }
@@ -172,6 +176,7 @@ export default {
 @media  screen and (max-width:900px) {
   .modal-content {
     margin-top: 10rem;
+    top: 30%;
   }
 
   .carousel__slide{

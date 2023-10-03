@@ -59,7 +59,8 @@ export default{
                         imagenPortada: "MemoryQuest/principalMemory.png",
                         img1: "MemoryQuest/secundariaWeather.png",
                         img2: "MemoryQuest/terceraWeather.png",
-                        img3: "MemoryQuest/cuartaMemory.png"
+                        img3: "MemoryQuest/cuartaMemory.png",
+                        figma: "MemoryQuest/figmaMemory.png"
                     }
 
                 },
@@ -75,7 +76,9 @@ export default{
                         imagenPortada: "WeatherApp/principalWeather.png",
                         img1: "WeatherApp/secundariaWeather.png",
                         img2: "WeatherApp/terceraWeather.png",
-                        img3: "WeatherApp/cuartaWeather.png"
+                        img3: "WeatherApp/cuartaWeather.png",
+                        mobil: "WeatherApp/mobileWeather.png",
+                        tablet: "WeatherApp/tabletWeather.png"
                     }
                 },
                 'ToPets':{
@@ -89,7 +92,8 @@ export default{
                     imagenes:{
                         imagenPortada: "ToPets/topetsprincipal.png",
                         img1: "ToPets/topetssegunda.png",
-                        img2: "ToPets/topetstercera.png"
+                        img2: "ToPets/topetstercera.png",
+                        figma: "ToPets/FigmaTopets.png"
                     }
                 },
                 'Montano':{

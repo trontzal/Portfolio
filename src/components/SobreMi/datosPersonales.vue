@@ -11,11 +11,11 @@
         </div>
         <div class="grid linea marginTablet">
             <p>Linkedin:</p>
-            <div class="linkedin"><a href="https://www.linkedin.com/in/gonzalo-lecumberri-496686259/" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></a></div>
+            <div class="linkedin"><a href="https://www.linkedin.com/in/gonzalo-lecumberri-496686259/" target="_blank"><font-awesome-icon class="scalar" :icon="['fab', 'linkedin']" /></a></div>
         </div>
         <div class="grid linea marginTablet">
             <p>GitHub:</p>
-            <div class="gitHub"><a href="https://github.com/trontzal" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a></div>
+            <div class="gitHub"><a href="https://github.com/trontzal" target="_blank"><font-awesome-icon class="scalar" :icon="['fab', 'github']" /></a></div>
         </div>
         <div class="marginTablet">
             <p>Gmail:</p>
