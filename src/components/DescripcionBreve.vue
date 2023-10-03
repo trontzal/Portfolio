@@ -11,7 +11,9 @@
             </p>
         </div>
         <p class="pequena" id="descripcion">
-            Apasionado de la programación Full Stack con experiencia del bootcamp Peñascal F5. Comprometido con la creación de soluciones tecnológicas y con un enfoque tanto en el desarrollo front-end como en el back-end. {{ parrafoRevelado }}<span class="blinking-cursor"></span>
+            ¡Hola! Soy Gonzalo y tengo 27 años. Desde mi infancia, he sentido un interés especial por el mundo de la tecnología. Durante este último año, he completado un bootcamp en Peñascal, lo que me ha permitido adquirir habilidades en desarrollo Full Stack y ha convertido la programación en mi pasión, llegando incluso a trabajar en mis propios proyectos. <br>
+            {{ parrafoRevelado }}
+            <span class="blinking-cursor"></span>
         </p>
 
         <router-link to="/sobreMi" class="btnPaginaInicio">
@@ -28,7 +30,7 @@ export default{
     },
     data(){
         return{
-            parrafo: "Listo para aportar mi entusiasmo y habilidades a proyectos innovadores.",
+            parrafo: "En conclusion creo que seria un buen componente para cualquier equipo de desarrollo al que pueda aportar mi ilusion, compromiso y ganas de trabajar.",
             parrafoRevelado: ""
         };
     },
@@ -81,7 +83,7 @@ export default{
         margin-bottom: 2rem;
         border-left: solid 2px #FF0000;
         padding-left: 1rem;
-        height: 12rem;
+        height: auto;
     }
 
     .blinking-cursor {
