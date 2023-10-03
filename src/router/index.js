@@ -43,3 +43,14 @@ const router = createRouter({
 })
 
 export default router
+
+const checkResponsiveMode = () => {
+  if (window.innerWidth < 900) {
+    router.replace('/sobreMi'); // Cambia la ruta a "/sobreMi" cuando es responsive
+  } else {
+    router.replace('/'); // Cambia la ruta a "/" cuando no es responsive
+  }
+}
+
+window.addEventListener('resize', checkResponsiveMode);
+checkResponsiveMode(); // Ejecuta la función al cargar la página
