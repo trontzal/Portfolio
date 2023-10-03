@@ -124,6 +124,7 @@ export default{
         #descripcion{
             padding-bottom: 6rem;
             height: auto;
+            font-size: 1.3rem;
         }
       
   }
