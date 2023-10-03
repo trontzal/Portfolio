@@ -20,8 +20,8 @@
 
             <div class="overlayFlex descripcionOverlay">
                 <p>Descripcion:</p>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque natus rem quod quo, assumenda doloribus dolore aperiam vero repellat. Libero dolorum consequatur corporis ratione obcaecati est delectus non maxime nostrum!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus consequatur similique nostrum, beatae hic optio autem recusandae ipsum ratione voluptates veritatis a magni porro labore voluptate fuga? Assumenda, repudiandae quaerat.
+                <p> 
+                    {{ selectedPortfolio.descripcion }}
                 </p>
             </div>
         </div>

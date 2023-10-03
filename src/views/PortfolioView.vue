@@ -54,7 +54,7 @@ export default{
                     tecnologias: "Vue 3, Figma, Python, Flask, MySQL, Railway",
                     githubFront: "https://github.com/trontzal/MemoryQuestFront",
                     githubBack: "https://github.com/trontzal/MemoryQuestBack",
-                    descripcion: "",
+                    descripcion: "Proyecto personal de Peñascal. En este proyecto final e individual de Peñascal, se nos pidió desarrollar tanto el frontend como el backend. En mi caso, opté por crear una página de juegos cognitivos que constaba de un frontend con varios juegos y un backend que permitía el registro de usuarios y la gestión de las puntuaciones. Esto posibilitaba la creación de gráficos de promedios y un ranking de jugadores.",
                     imagenes:{
                         imagenPortada: "MemoryQuest/principalMemory.png",
                         img1: "MemoryQuest/secundariaWeather.png",
@@ -67,10 +67,10 @@ export default{
                     imagenPortada: "WeatherApp/principalWeather.png",
                     titulo: "Weather App",
                     autor: "Jonathan Echeverria, Yorlin Pachajoa, Edurne Montalban, Gonzalo Lecumberri,     Jone Guerrero, May Torres",
-                    tecnologias: "Vue 3, Figma, Bootstrap, Jest, Trello, Canva",
+                    tecnologias: "Vue 3, Figma, Bootstrap, Jest, Trello, Canva, API externa",
                     githubFront: "https://github.com/trontzal/AppWeather",
                     githubBack: "",
-                    descripcion: "",
+                    descripcion: "En este proyecto, se nos solicitó crear una página frontend que utilizara una API externa, en nuestro caso, una aplicación de pronóstico del tiempo. El valor agregado de nuestra aplicación radicaba en mostrar las mejores horas del día para realizar actividades deportivas al aire libre. En este proyecto de grupo, mi principal responsabilidad fue desarrollar el componente principal encargado de mostrar la información meteorológica actual y determinar si era apropiado para la práctica deportiva, además de colaborar en la integración de la API.",
                     imagenes:{
                         imagenPortada: "WeatherApp/principalWeather.png",
                         img1: "WeatherApp/secundariaWeather.png",
@@ -85,7 +85,7 @@ export default{
                     tecnologias: "Html5, Css3, Sass, Bootstrap5, JavaScript, Trello, Canvas, Figma",
                     githubFront: "https://github.com/trontzal/ToPets-Ecomerce",
                     githubBack: "",
-                    descripcion: "",
+                    descripcion: "Proyecto E-commerce: creamos una tienda en línea llamada 'Topets' en la que se venden productos para animales en tres idiomas diferentes: Euskera, Inglés y Español. En este proyecto, aún no teníamos conocimiento de ningún framework, por lo que utilizamos puro HTML, CSS y JavaScript. Mi responsabilidad principal abarcó tanto el diseño como la funcionalidad del carrito de la compra, además de trabajar en el sistema de cambio de idioma.",
                     imagenes:{
                         imagenPortada: "ToPets/topetsprincipal.png",
                         img1: "ToPets/topetssegunda.png",
@@ -99,7 +99,7 @@ export default{
                     tecnologias: "Vue 3, Python, Flask, MySQL, Jest, Boostrap, Figma, Trello",
                     githubFront: "https://github.com/trontzal/Montano_Front",
                     githubBack: "https://github.com/trontzal/Montano_Back",
-                    descripcion: "",
+                    descripcion: "Montano fue nuestro último proyecto de grupo en Peñascal. En este trabajo, teníamos que poner en práctica todo lo aprendido durante el bootcamp, trabajando con un cliente real, la Escuela de Hostelería Montano. Nos solicitaron que mantuviéramos la fidelidad al diseño original del sitio weby tambien que incorporáramos nuevas funcionalidades. Logramos hacer que el menú del restaurante fuera dinámico mediante el uso de una base de datos, además de implementar varias mejoras en comparación con la página original.",
                     imagenes:{
                         imagenPortada: "Montano/montanoprincipal.png",
                         img1: "Montano/montanoSecundaria.png",
