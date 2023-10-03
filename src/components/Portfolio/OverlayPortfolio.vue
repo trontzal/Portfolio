@@ -140,5 +140,11 @@ export default{
             margin-top: 1.5rem;
             font-size: 2rem;
         }
+
+        .descripcionOverlay{
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1rem;
+        }
     }
 </style>
