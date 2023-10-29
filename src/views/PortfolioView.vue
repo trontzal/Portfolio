@@ -110,12 +110,12 @@ export default{
                         img2: "Montano/montanoTercera.png"
                     }
                 },
-                'ToDo':{
+                'Iturritek':{
                     imagenPortada: "",
-                    titulo: "To Do",
-                    autor: "",
-                    tecnologias: "",
-                    githubFront: "",
+                    titulo: "Iturritek",
+                    autor: "Front: Equipo de frontend. Back: Gonzalo Lecumberri",
+                    tecnologias: "Python, Flask, html, css y javascript",
+                    githubFront: "https://github.com/ikatza1967/iturritek-web",
                     githubBack: "",
                     descripcion: "",
                     imagenes:{
