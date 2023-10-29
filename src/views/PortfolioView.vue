@@ -36,7 +36,6 @@ export default{
         showOverlay(portfolio1) {
             this.overlay = true;
             this.selectedPortfolio = portfolio1;
-            console.log(this.overlay)
         },
         cerrarOverlay(){
             this.overlay = false;
