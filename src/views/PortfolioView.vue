@@ -111,11 +111,26 @@ export default{
                     }
                 },
                 'Iturritek':{
-                    imagenPortada: "",
+                    imagenPortada: "Iturritek/IturritekPrincipal.png",
                     titulo: "Iturritek",
                     autor: "Front: Equipo de frontend. Back: Gonzalo Lecumberri",
-                    tecnologias: "Python, Flask, html, css y javascript",
+                    tecnologias: "Python, Flask, html, css, javascript, sqlite",
                     githubFront: "https://github.com/ikatza1967/iturritek-web",
+                    githubBack: "https://github.com/trontzal/iturritek-back",
+                    descripcion: "Practicas del bootcamp. En este proyecto, se desarrolló el backend de una página web, en complemento al trabajo del equipo de frontend. Utilizando Python y el framework Flask, se creó una base de datos relacional, se implementó un sistema de autenticación con JWT, se diseñó una intranet para administrar servicios y categorías, y se habilitó una funcionalidad de contacto que envía correos electrónicos automáticos. Estas implementaciones permitieron la creación de una plataforma dinámica y segura, mejorando la experiencia del usuario y facilitando la expansión de la página. ",
+                    imagenes:{
+                        imagenPortada: "Iturritek/IturritekPrincipal.png",
+                        img1: "Iturritek/IturritekSecundaria.png",
+                        img2: "Iturritek/IturritekTercera.png",
+                        img3: "Iturritek/IturritekCuarta.png"
+                    }
+                },
+                '':{
+                    imagenPortada: "",
+                    titulo: "",
+                    autor: "",
+                    tecnologias: "",
+                    githubFront: "",
                     githubBack: "",
                     descripcion: "",
                     imagenes:{
