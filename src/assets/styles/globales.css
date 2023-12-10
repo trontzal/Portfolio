@@ -1,3 +1,35 @@
+.scalar:hover {
+  font-size: 1.7rem;
+}
+
+.tituloVista {
+  position: relative;
+  z-index: 2;
+  padding-top: 13px;
+  font-size: 2rem;
+}
+
+.sombraTitulo {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.702);
+  font-size: 5rem;
+  top: 0;
+  left: 0;
+}
+
+.tituloPequeno {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tituloSobreMi {
+  text-align: center;
+  margin: 2rem;
+  position: relative;
+}
+
 #lineas {
   position: absolute;
   background-image: url("@/assets/lineasFondo.png");
@@ -30,6 +62,9 @@ font-face {
   background-color: #ffffff;
 }
 
+.router-link-exact-active.routerPequeno {
+  border-bottom: 2px solid white;
+}
 
 .pequena {
   font-size: 1.7rem;
@@ -41,6 +76,10 @@ font-face {
 
 .grande {
   font-size: 3rem;
+}
+
+.link {
+  color: #0000FF;
 }
 
 .sombra {
@@ -137,4 +176,17 @@ font-face {
             clip-path: var(--slice-1);
     transform: translate(0);
   }
+}
+/* Estilo personalizado para la barra de desplazamiento en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9da2a7; /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 5px; /* Radio de esquina del pulgar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de fondo de la pista de la barra de desplazamiento */
 }/*# sourceMappingURL=globales.css.map */

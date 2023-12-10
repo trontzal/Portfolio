@@ -7,7 +7,8 @@ import '@/assets/styles/globales.scss'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import { inject } from '@vercel/analytics';
+inject();
 library.add(faLinkedin, faGithub);
 
 
