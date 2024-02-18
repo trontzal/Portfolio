@@ -153,6 +153,7 @@ export default{
     .cuadradoPortfolio{
         width: 80%;
         align-self: center;
+        margin-top: 2rem;
     }
 
     .cuadradoPortfolio > div{
