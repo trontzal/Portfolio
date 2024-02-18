@@ -11,7 +11,7 @@
         </cuadradoComp>
 
 
-        <cuadradoComp>
+        <cuadradoComp id="stack">
           <stack class="dentroCuadrado cuadradoStack"></stack>
         </cuadradoComp>
       </div>
@@ -68,8 +68,9 @@ export default {
   gap: 1rem;
 }
 
-
-
+#stack .fondoCuadrado{
+  height: 90%;
+}
 
 .dentroCuadrado {
   color: white;
