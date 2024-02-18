@@ -136,18 +136,6 @@ export default{
                         imagenPortada: "",
                     }
                 },
-                '':{
-                    imagenPortada: "",
-                    titulo: "",
-                    autor: "",
-                    tecnologias: "",
-                    githubFront: "",
-                    githubBack: "",
-                    descripcion: "",
-                    imagenes:{
-                        imagenPortada: "",
-                    }
-                }
             }
         }
     }
@@ -162,11 +150,22 @@ export default{
         flex-direction: column;
     }
 
+    .cuadradoPortfolio{
+        width: 80%;
+        align-self: center;
+    }
+
     .cuadradoPortfolio > div{
         color: white;
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
+    }
+
+    @media  screen and (max-width:768px) {
+        .cuadradoPortfolio{
+            width: 100%;
+        }
     }
 
     @media  screen and (max-width:768px) {

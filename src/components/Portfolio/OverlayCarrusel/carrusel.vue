@@ -162,10 +162,12 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 1rem;
-  color: rgb(255,255,1);
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   cursor: pointer;
+  background-color: black;
+  margin: 1rem;
 }
 
 .close:hover{
