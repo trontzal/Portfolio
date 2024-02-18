@@ -17,9 +17,9 @@
     border: solid 1px black;
 } */
 
-    #Cuadrado{
+    /* #Cuadrado{
         margin: 1rem;
-    }
+    } */
 
     .esquinaCuadrado{
         width: 20px;

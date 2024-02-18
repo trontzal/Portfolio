@@ -53,14 +53,19 @@ export default {
 
 
 .contenidosSobreMi {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  width: 80%;
+  align-self: center;
+  gap: 1rem;
 }
 
 
 .datosPersonalesYStack{
   display: flex;
   width: 100%;
+  gap: 1rem;
 }
 
 
@@ -98,10 +103,20 @@ export default {
   margin-top: 1rem;
 }
 
+
+@media screen and (max-width:1300px) {
+  .contenidosSobreMi {
+    width: 100%;
+  }
+
+}
+
+
 @media screen and (max-width:900px) {
   .contenidosSobreMi {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .datosPersonalesYStack{
